@@ -1,0 +1,51 @@
+﻿@page
+@model Portfolio.Pages.ThankYou
+@{
+    ViewData["Title"] = "Thank You!";
+}
+
+
+
+
+<body>
+
+    <section id="aboutme">
+
+        <div class="wrapper">
+            <div class="welcome">
+                <h1><strong>Thank </strong> You! </h1>
+
+                <h>Thank you for contacting me!</h>
+                <p>Your message has been received, and I will get back to you as soon as possible.</p>
+                
+
+                <a id="navigateButton" title="Main Menu" asp-page="/Index">Home </a>
+            </div>
+
+            <div class="aboutme">
+
+                <img src="../img/me.png" alt="About Me" />
+            </div>
+        </div>
+    </section>
+
+</body>
+
+
+
+<section id="contact">
+    <div id="left">
+        <form action="https://formspree.io/f/mjvnknno" method="POST" redirect="thankyou.html">
+            <div class="formbox">
+                <input name="name" type="text" class="short" placeholder="Name" onfocus="this.placeholder=''" required
+                       onblur="this.placeholder='Name'" />
+                <input name="email" type="text" class="short" placeholder="Email" onfocus="this.placeholder=''" required
+                       onblur="this.placeholder='Email'" />
+                <input name="subject" type="text" class="feedback-input" placeholder="Subject" onfocus="this.placeholder=''"
+                       required onblur="this.placeholder='Subject'" />
+                <textarea name="text" class="feedback-input" placeholder="Message" onfocus="this.placeholder=''" required
+                          onblur="this.placeholder='Message'"></textarea>
+                <input type="submit" value="SEND" />
+            </div>
+        </form>
+    </div>

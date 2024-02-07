@@ -1,0 +1,168 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Portfolio Aslan Ahmedov";
+}
+
+<body>
+    <section id="aboutme">
+
+        <header>
+            <div class="nav-toggle">
+                <p>Menu</p>
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#full-slide">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="wrapper">
+            <div class="welcome">
+                <h1><strong>Aslan</strong> Ahmedov</h1>
+    
+
+                <a id="navigateButton" title="Projects Page" asp-page="/Project">PROJECTS </a>
+            </div>
+
+            <div class="aboutme">
+                <img src="../img/me.png" alt="About Me" />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="wrapper">
+            <div class="blurb">
+                <h2>Passionate <strong>GIS </strong>Enthusiast</h2>
+                <p>
+                    <strong>
+                        Eager to delve into the dynamic realm of Geographic Information Systems (GIS)
+                        while pursuing my studies in Fanshawe. Actively cultivating skills in spatial
+                        data analysis, visualization, and geoprocessing. Proficient in Python, SQL, ArcGIS Pro, and C#,
+                        with a passionate interest in applying technology for sustainable urban planning and geospatial data
+                        science.
+                    </strong>
+                </p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/asikpalysik/" target="_blank" rel="noopener" title="LinkedIn">
+                        <i class="icon-linkedin"></i>
+                    </a>
+                    <a href="https://public.tableau.com/app/profile/aslan.ahmedov/vizzes" target="_blank" rel="noopener"
+                       title="Tableau"><i class="icon-tableau"></i></a>
+                    <a href="https://www.kaggle.com/aslanahmedov" target="_blank" rel="noopener" title="Kaggle">
+                        <i class="icon-kaggle"></i>
+                    </a>
+                    <a href="https://github.com/Asikpalysik" target="_blank" rel="noopener" title="GitHub">
+                        <i class="icon-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Asikpalysik/" target="_blank" rel="noopener" title="Facebook">
+                        <i class="icon-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/Mr_Asik" target="_blank" rel="noopener" title="Twitter">
+                        <i class="icon-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/asikpalysik/" target="_blank" rel="noopener" title="Instagram">
+                        <i class="icon-instagram"></i>
+                    </a>
+                    <a href="..\img\CV\CV ASLAN AHMEDOV.pdf" download="CV_Aslan_Ahmedov.pdf" target="_blank" rel="noopener"
+                       title="Download CV"><i class="icon-profile"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="full-slide">
+
+    <ul class="banner">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <i class="icon-chevron-thin-left prev" aria-label="Previous image"></i>
+    <i class="icon-chevron-thin-right next" aria-label="Next image"></i>
+</section>
+
+
+  <section id="three-slide">
+    <div class="wrapper">
+      <ul class="slider">
+
+        <li class="current"><img src="../img/EvacuationPlan.jpg" title="Evacuation Plan" alt="Image 1"></li>
+        <li class="front"><img src="../img/Emergency Evacuation.jpg" title="Evacuation Planing" alt="Image 2"></li>
+        <li class="back"><img src="../img/Terrain Analysis.jpg" title="Terrain Analysis" alt="Image 3"></li>
+        <li><img src="../img/Glyph.gif" title="Glyph" alt="Image 4"></li>
+        <li><img src="../img/SP_CreateOne.gif" title="Create One" alt="Image 5"></li>
+        <li><img src="../img/Africa_Model.gif" title="Africa Model" alt="Image 6"></li>
+        <li><img src="../img/Impact Event.gif" title="Impact Event" alt="Image 7"></li>
+        <li><img src="../img/Dashboard 2.png" title="Telecom Customer Churn Analysis" alt="Image 8"></li>
+        <li><img src="../img/Dashboard 1.png" title="Hospitality Dashboard" alt="Image 9"></li>
+        <li><img src="../img/Dashboard 3.png" title="Sample Superstore - Sales Performance"
+            alt="Image 10"></li>
+        <li><img src="../img/Dashboard 4.png" title="Flight Delay Analysis" alt="Image 11"></li>
+        <li><img src="../img/Self_Driving_Car.gif" title="Self Driving Car" alt="Image 12"></li>
+        <li><img src="../img/Self_Driving_Car2.png" title="Self Driving Car Analysis" alt="Image 13">
+        </li>
+        <li><img src="../img/ANPR.gif" title="Automatic Number Plate Recognition" alt="Image 14"></li>
+        <li><img src="../img/ANPR2.gif" title="Automatic Number Plate Recognition" alt="Image 15"></li>
+        <li><img src="../img/Walmart Sales Forecasting.png" title="Walmart Sales Forecasting"
+            alt="Image 16"></li>
+        <li><img src="../img/ChatBot.png" title="Star Wars Chatbot" alt="Image 17"></li>
+        <li><img src="../img/Market Basket Analysis - Apriori Algorithm.png"
+            title="Market Basket Analysis - Apriori Algorithm" alt="Image 18"></li>
+      </ul>
+    </div>
+    <i class="icon-chevron-thin-left prev"></i>
+    <i class="icon-chevron-thin-right next"></i>
+  </section>
+
+    <section id="contact">
+        <div id="left">
+            <h1><strong>Contact</strong> Me</h1>
+            <form id="myForm" action="https://formspree.io/f/mjvnknno" method="POST">
+                <div class="formbox">
+                    <input name="name" type="text" class="short" placeholder="Name" onfocus="this.placeholder=''" required
+                           onblur="this.placeholder='Name'" />
+                    <input name="email" type="text" class="short" placeholder="Email" onfocus="this.placeholder=''" required
+                           onblur="this.placeholder='Email'" />
+                    <input name="subject" type="text" class="feedback-input" placeholder="Subject" onfocus="this.placeholder=''"
+                           required onblur="this.placeholder='Subject'" />
+                    <textarea name="text" class="feedback-input" placeholder="Message" onfocus="this.placeholder=''" required
+                              onblur="this.placeholder='Message'"></textarea>
+                    <input type="submit" value="SEND" />
+                </div>
+            </form>
+        </div>
+
+        <div id="right">
+            <div id="map"></div>
+            <div id="map-overlap">
+                Aslan Ahmedov, <br>
+                Avenue Road, <br>
+                Toronto, M5R 0A4, Canada<br>
+                <span>
+                    <span id="at"></span>:aslanahmedov@yahoo.com
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOtFWKog4KpcCHk3JGoqbJABLxwEuEIjc&callback=initMap"
+            async defer></script>
+
+    <div class="button-container">
+        <button type="button" class="button" id="button" title="Back to Top">
+            <i class="icon-arrow-up"></i>
+
+        </button>
+    </div>
+</body>
+
+
+
